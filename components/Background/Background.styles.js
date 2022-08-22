@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CrowdLOGO from '../../images/crowd-image.jpg';
+
 
 
 export const Wrapper = styled.div`
@@ -18,23 +18,30 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
 
+
     .Cover {
-        height: 600px;
+        
         background-color: black;
         opacity: 0.5;
+        min-height: 600px;
+
     }
 
     ImageLOGO {
         margin-top: 5px;
     }
 
-    height: 400px;
+    h1 {
+        min-height: 0;
+    }
+
     width: 100%;
 
     .Nav {
         display: flex;
         justify-content: center;
         margin-top: 2%;
+        text-color: white;
     }
 
     li {
@@ -42,21 +49,6 @@ export const Content = styled.div`
         padding-right: 10px;
     }
 
-    .SSK {
-        margin-top: 8%;
-
-        @media screen and (max-width: 600px) {
-            font-weight:700; font-size: 50px;
-        }
-        
-        @media screen and (max-width: 400px) {
-            font-weight:500; font-size: 30px;
-        }
-    
-        @media screen and (max-width: 200px) {
-            font-weight:300; font-size: 15px;
-        }
-    }
     .SOR1 {
         color: transparent;
         -webkit-text-stroke-color: white;
@@ -64,6 +56,18 @@ export const Content = styled.div`
         font-family: Roboto; font-style:normal;
         font-weight:900; font-size: 70px;
         margin-top: 30px;
+
+        @media screen and (max-width: 800px) {
+            font-weight:700; font-size: 50px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            font-weight:500; font-size: 30px;
+        }
+    
+        @media screen and (max-width: 400px) {
+            font-weight:300; font-size: 15px;
+        }
     }
     .SOR2 {
         color: white;
@@ -71,6 +75,18 @@ export const Content = styled.div`
         font-weight:900; 
         font-style:normal; 
         font-size: 70px;
+
+        @media screen and (max-width: 800px) {
+            font-weight:700; font-size: 50px; margin-top: -40px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            font-weight:500; font-size: 30px; margin-top: -23px;
+        }
+    
+        @media screen and (max-width: 400px) {
+            font-weight:300; font-size: 15px; margin-top: -15px;
+        }
     }
     .SOR3 {
         color: transparent;
@@ -79,12 +95,31 @@ export const Content = styled.div`
         font-family: Roboto; font-style:normal;
         font-weight:900; font-size: 70px;
         margin-top: -47px;
+
+        @media screen and (max-width: 800px) {
+            font-weight:700; font-size: 50px; margin-top: -40px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            font-weight:500; font-size: 30px; margin-top: -23px;
+        }
+    
+        @media screen and (max-width: 400px) {
+            font-weight:300; font-size: 15px; margin-top: -15px;
+        }
+    }
+
+    
+
+
+    .donatebtn {
+        width: 120px;
+    border-radius: 40px; height: 40px; background-color: green; color: white;
     }
 
     .Donate {
-        width: 120px; border-radius: 40px; height: 40px; margin-top: 50px;
-        background-color: green; margin-left: 45%; color: white;
-            }
+        margin-top: 50px; margin-left: 45%;
+    }
     
 
 `;
@@ -114,7 +149,7 @@ export const Text = styled.div`
     width: 250px;
     height: 35px;
     background: green;
-    margin-top: -30%;
+    // margin-top: -30%;
     margin-left: 25%
 
 `;

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     display: grid;
-    height: 400px;
 `;
 
 export const Content = styled.div`

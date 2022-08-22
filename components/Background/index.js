@@ -3,7 +3,7 @@ import React from 'react';
 import CrowdLOGO from '../../images/crowd-image.jpg';
 import LOGOImg from '../../images/LogoImg.png';
 
-import { Wrapper, Content, CrowdImg, ImageLOGO, Text, Text1 } from './Background.styles';
+import { Wrapper, Content, ImageLOGO } from './Background.styles';
 
 const Background = () => (
     <Wrapper>
@@ -17,17 +17,17 @@ const Background = () => (
             <div className='Nav'>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active"
-                    aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link"
+                    href='../Pages/Home'>Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../protest/about.html">About</a>
+                    <a class="nav-link" href='../Pages/About'>About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../protest/donate.html">Donations</a>
+                    <a class="nav-link" href="../Pages/Donate">Donations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../protest/contact.html">Contact</a>
+                    <a class="nav-link" href="../Pages/Contact">Contact</a>
                 </li>
             </ul>
             </div>
@@ -47,9 +47,14 @@ const Background = () => (
     </div>
 
             <div className='Donate'>
-            <div class="text-center">
-                <h3 class="text-center" href="../protest/donate.html">Donate</h3>
-            </div>
+            
+                        <div>
+                            <a href= '../Pages/Donate'>
+                        <input class="donatebtn" type="submit" value="Donate" id="submit">
+                        </input>
+                        </a>
+                        </div>
+            
             </div>
 
 

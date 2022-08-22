@@ -1,27 +1,29 @@
 import React from 'react';
 //Routing
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 //Components
-import Background from './components/Background';
-import Phasetwo from './components/Phasetwo';
-import Gallery from './components/Gallery';
-import Whatwedo from './components/Whatwedo';
-import Lower from './components/Lower';
-import Footer from './components/Footer';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Donate from './Pages/Donate';
+import Home from './Pages/Home';
+
 //Styles
-import { GlobalStyle } from './GlobalStyle';
+// import "./App.css";
 
 
-const App = () =>(
-  <Router>
-    <Background />
-    <Phasetwo />
-    <Gallery />
-    <Whatwedo />
-    <Lower />
-    <Footer />
-      <GlobalStyle />
-  </Router>
-);
+const App = () =>{
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home/>} />
+        <Route path="/Pages/Home" element={<Home/>} />
+        <Route path="/Pages/About" element={<About/>} />
+        <Route path="/Pages/Contact" element={<Contact/>} />
+        <Route path="/Pages/Donate" element={<Donate/>} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;
